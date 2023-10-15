@@ -199,7 +199,7 @@ def main():
     global clausetype
     parser = build_parser()
     args = parser.parse_args()
-    clausetype = ["acl", "acl:relcl", "acl:adv", "acl:attr", "acl:cleft", "acl:cmpr", "acl:inf", "acl:relat", "advcl", "advcl:abs", "advcl:cau:", "advcl:cleft", "advcl:cmpr", "advcl:cond", "advcl:coverb", "advcl:eval", "advcl:lcl", "advcl:lto", "advcl:mcl", "advcl:pred", "advcl:relcl", "advcl:svc", "advcl:tcl", "ccomp", "ccomp:cleft", "ccomp:obj", "ccomp:pmod", "ccomp:pred", "csubj", "csubj:cleft", "csubj:cop", "csubj:pass", "xcomp:cleft", "xcomp:ds", "xcomp:obj", "xcomp:pred", "xcomp:subj"]
+    clausetype = ["acl", "acl:relcl", "acl:adv", "acl:attr", "acl:cleft", "acl:cmpr", "acl:inf", "acl:relat", "advcl", "advcl:abs", "advcl:cau:", "advcl:cleft", "advcl:cmpr", "advcl:cond", "advcl:coverb", "advcl:eval", "advcl:lcl", "advcl:lto", "advcl:mcl", "advcl:pred", "advcl:relcl", "advcl:svc", "advcl:tcl", "ccomp", "ccomp:cleft", "ccomp:obj", "ccomp:pmod", "ccomp:pred", "csubj", "csubj:cleft", "csubj:cop", "csubj:pass", "xcomp", "xcomp:cleft", "xcomp:ds", "xcomp:obj", "xcomp:pred", "xcomp:subj"]
     subj = ["nsubj","nsubj:advmod", "nsubj:caus", "nsubj:cleft", "nsubj:cop","nsubj:lvc","nsubj:pass"]
     obj = ["obj","obj:advmod","obj:advneg","obj:agent", "obj:lvc","obj:obl"]
     conj = ["conj","conj:expl","conj:extend","conj:svc"]
