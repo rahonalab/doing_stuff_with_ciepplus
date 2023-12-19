@@ -36,6 +36,11 @@ for sentence in tqdm(sentences):
     
     length_without_punctuation = len(words) - len(punctuation_indices)
     dependency_lengths = []
+    #Write down surprisal values
+    srp1 = []
+    srp2 = []
+    srp3 = []
+    srp4 = []
     dependency_sum = 0
     
     for word in words:
@@ -52,7 +57,11 @@ for sentence in tqdm(sentences):
         dependency_lengths.append(dependency_length)
         if cells[7].lower() != "punct":
             dependency_sum += abs(dependency_length)
-        
+       #Surprisal values
+        srp1.append(cells[13])
+        srp2.append(cells[14])
+        srp3.append(cells[15])
+        srp4.append(cells[16])
     try:
         dependency_avg = dependency_sum/(len(words) - len(punctuation_indices) - 1)
     except:
@@ -61,7 +70,7 @@ for sentence in tqdm(sentences):
     for i,word in enumerate(words):
         cells = word.split("\t")
         #We rewrite conllu fields from 0 to 9, and add new fields
-        newdata.write(cells[0] + "\t" + cells[1] + "\t" + cells[2] + "\t" + cells[3] + "\t" + cells[4] + "\t" + cells[5] + "\t" + cells[6] + "\t" + cells[7] + "\t" + cells[8] + "\t" + cells[9] + "\t"+ str(dependency_lengths[i]) + "\t" + str(length_without_punctuation) + "\t" + str(dependency_sum) + "\t" + str(dependency_avg) + "\n")
+        newdata.write(cells[0] + "\t" + cells[1] + "\t" + cells[2] + "\t" + cells[3] + "\t" + cells[4] + "\t" + cells[5] + "\t" + cells[6] + "\t" + cells[7] + "\t" + cells[8] + "\t" + cells[9] + "\t"+ str(dependency_lengths[i]) + "\t" + str(length_without_punctuation) + "\t" + str(dependency_sum) + "\t" + str(dependency_avg) + "\t" + srp1[i] + "\t" + srp2[i] + "\t" + srp3[i] + "\t" + srp4[i] + "\n")
     newdata.write("\n")
 
 
