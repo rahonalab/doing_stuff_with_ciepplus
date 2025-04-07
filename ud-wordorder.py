@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-############ This script prints out comma-separated spreadsheet(s) (report-language.csv) with the ratio of word order pairs in conllu files ########
+############ Script used for Talamo & Verkerk (2022), Talamo 2022, Talamo 2023
+# This script prints out comma-separated spreadsheet(s) (report-language.csv) with the ratio of word order pairs in conllu files ########
 import sys
 import subprocess
 import re
