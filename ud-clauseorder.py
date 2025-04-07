@@ -1,4 +1,4 @@
-############ This script prints out comma-separated spreadsheet(s) (report-language.csv) with the ratio of word order pairs, core argument and predicate morpho-syntactic features in conllu files ########
+#### Script used for Talamo, Verkerk and Salaberri (2024): A quantitative approach to clause type and syntactic change in two Indo-European corpora
 #!/usr/bin/env python3
 import sys
 import subprocess
