@@ -1,1 +1,1 @@
-# corpus_analysis_tools
+# Doing stuff with (mini)ciepplus, for real!
